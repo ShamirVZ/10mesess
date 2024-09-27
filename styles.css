@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7d6e0; /* Fondo romántico */
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+#caja, #tapa {
+    width: 270px; /* Tamaño de la caja grande */
+}
+
+#cajaBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    margin-top: 150px; /* Baja la caja hacia abajo */
+    width: 170px;
+    left: 5%;
+}
+
+#tapa {
+    position: absolute;
+    top: -115px; /* Subido 100% más para estar sobre la caja */
+    left: 8%;
+    transition: transform 1s ease-out;
+    width: 255px;
+    transform-origin: top center; /* El origen de la rotación es el centro superior de la tapa */
+}
+
+#peluche, #flores, #carta {
+    width: 90px; /* Tamaño reducido de los elementos */
+    position: absolute;
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+#peluche {
+    left: 120%; /* Centra el peluche sobre la caja */
+    top: 180px; /* Sale por arriba pero más visible */
+    transform: translateX(-50%);
+    width: 80px;
+}
+
+
+#flores {
+    right: 50%;
+    top: 130px; /* Sale por arriba */
+    width: 200px;
+}
+
+#carta {
+    top: 130px; /* Sale aún más arriba */
+    left: 57%;
+    transform: translateX(-50%);
+    width: 80px;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.letter-content {
+    background-color: #ffe6f2; /* Fondo romántico para la carta */
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    height: 600px;
+    border-radius: 15px;
+    transform: scale(0);
+    transition: transform 0.5s ease-out;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.letter-content p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+#backBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    cursor: pointer;
+}

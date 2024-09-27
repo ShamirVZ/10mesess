@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regalo de Amor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box">
+            <button id="cajaBtn">
+                <img id="caja" src="cajaa.png" alt="Caja">
+                <img id="tapa" src="tapa.png" alt="Tapa de la caja">
+            </button>
+        </div>
+        <div class="content hidden" id="content">
+            <img id="peluche" src="peluche.png" alt="Peluche">
+            <img id="flores" src="flores.png" alt="Flores">
+            <img id="carta" src="carta.png" alt="Carta" onclick="openLetter()">
+        </div>
+    </div>
+    
+    <div id="letterModal" class="modal hidden">
+        <div class="letter-content">
+            <p>Mi amor</p>
+            <p>Ya cumplimos 10 meses mi amor, es increíble como pasa de rápido el tiempo, en todo este tiempo hemos vivido tantas cosas juntos mi amor y me encanta que a pesar de los problemas hayamos encontrado la forma de permanecer juntos, sinceramente te amo con todo mi corazón, daría todo de mí para poder tenerte, eres el amor de mi vida y aún me quedan muchas formas de demostrarte que es así, ay mi amor no sé cómo puedo expresar de como me siento ahora, siento que ya tengo todo si te tengo a ti, y solo a ti te amaré nunca olvides que solo a ti te amaré, solo tú tienes todo mi amor y mi tiempo, sin duda que te amo muchísimo 🥺💖, no existe un momento del día en el que no pueda apartarte de mí es que mi amor te has convertido en parte de mi alma por eso ya nada me conforma si no estás tú porque eres el ser que amo sin fin, mi razón eterna de vivir y sin ti mi vida es todo un vacío sin fondo,mi amor nunca dudes que te amo mi amor y tampoco dudes de que siempre te amaré, te amo más que ayer y menos que mañana 💘</p>
+            <img id="backBtn" src="back.png" alt="Atrás" onclick="closeLetter()">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
